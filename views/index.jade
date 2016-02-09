@@ -1,0 +1,72 @@
+extends layout
+
+block content
+  h1= title
+  p Using #{title} to parse Javascript!
+  .container-fluid
+    .row
+      .col-xs-8
+        .requirements
+          .whitelist MUST HAVE:
+            br
+            input(class="wl-item" type="checkbox" value="VariableDeclaration")
+            label Variable Declaration
+            br
+            input(class="wl-item" type="checkbox" value="IfStatement")
+            label If Statement
+            br
+            input(class="wl-item" type="checkbox" value="SwitchStatement")
+            label Switch statement
+            br
+            input(class="wl-item" type="checkbox" value="TryStatement")
+            label Try Statement
+            br
+            input(class="wl-item" type="checkbox" value="ForStatement")
+            label For loop
+            br
+            input(class="wl-item" type="checkbox" value="WhileStatement")
+            label While loop
+            br
+          .blacklist MUST NOT HAVE:
+            br
+            input(class="bl-item" type="checkbox" value="VariableDeclaration")
+            label Variable Declaration
+            br
+            input(class="bl-item" type="checkbox" value="IfStatement")
+            label If Statement
+            br
+            input(class="bl-item" type="checkbox" value="SwitchStatement")
+            label Switch statement
+            br
+            input(class="bl-item" type="checkbox" value="TryStatement")
+            label Try Statement
+            br
+            input(class="bl-item" type="checkbox" value="ForStatement")
+            label For loop
+            br
+            input(class="bl-item" type="checkbox" value="WhileStatement")
+            label While loop
+            br
+          .rough-struct Structure must contain: 
+            br
+            select(class="struct-one" name="struct-one")
+              option(value="")
+              option(value="VariableDeclaration") Variable Declariation
+              option(value="IfStatement") If statement 
+              option(value="SwitchStatement") Switch statement 
+              option(value="TryStatement") Try statement 
+              option(value="ForStatement") For loop 
+              option(value="WhileStatement") While loop 
+            |  within a(n) 
+            select(class="struct-two" name="struct-two")
+              option(value="")
+              option(value="IfStatement") If statement 
+              option(value="SwitchStatement") Switch statement 
+              option(value="TryStatement") Try statement 
+              option(value="ForStatement") For loop 
+              option(value="WhileStatement") While loop 
+        #editor
+        //- faux run button removed as unecessary
+        //- button#submit-js Run
+      .col-xs-4
+        #update Happy Coding!

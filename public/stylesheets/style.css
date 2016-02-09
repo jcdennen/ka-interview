@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.whitelist {
+  margin-bottom: 10px;
+}
+.blacklist {
+  margin-bottom: 10px;
+}
+.rough-struct {
+  margin-bottom: 10px;
+}
+#editor {
+  height: 400px;
+  /*width: 800px;*/
+}
+#submit-js {
+  margin-top: 10px;
+  height: 40px;
+  width: 80px;
+  float: right;
+}
+#update {
+  white-space: pre-wrap;
+}
